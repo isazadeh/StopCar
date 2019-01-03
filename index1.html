@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STOPCAR</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="row">
+					<div class="navBar">
+						<div class="imgali"><img class="logo" src="img/Logo1.jpg" alt=""></div>
+						<ul class="text2">
+		                    <li><a href="#">Service</a></li>
+		                    <li><a href="#">Disassembly</a></li>
+		                    <li><a href="#">Contact</a></li>
+		                    <li><a href="#">Installation</a></li>
+		                    <li><a href="#">News</a></li>
+		                    <li><a href="#">Tuning</a></li>
+		                    
+                		</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div class="container">
+		<div class="row">
+			<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<div class="line1"></div>
+				<div class="pricetextdiv">
+					<p class="pricetext">$45000</p>
+				</div>
+				<div class="headertext">
+					<h2 class="fiattext">Fiat Bravo</h2>
+				</div>
+				<div class="gallerycar">
+					<!-- Full-width images with number text -->
+					  <div class="mySlides">
+					    <div class="numbertext">1 / 6</div>
+					      <a href="img/car1-big.jpg"data-lightbox="mygallery"><img src="img/car1-big.jpg" style="width:100%;"></a>
+					  </div>
+
+					  <div class="mySlides">
+					    <div class="numbertext">2 / 6</div>
+					      <a href="img/car2-big.jpg"data-lightbox="mygallery"><img src="img/car2-big.jpg" style="width:100%"></a>
+					  </div>
+
+					  <div class="mySlides">
+					    <div class="numbertext">3 / 6</div>
+					      <a href="img/car3-big.jpg"data-lightbox="mygallery"><img src="img/car3-big.jpg" style="width:100%"></a>
+					  </div>
+
+					  <div class="mySlides">
+					    <div class="numbertext">4 / 6</div>
+					      <a href="img/car4-big.jpg"data-lightbox="mygallery"><img src="img/car4-big.jpg" style="width:100%"></a>
+					  </div>
+
+					  <div class="mySlides">
+					    <div class="numbertext">5 / 6</div>
+					      <a href="img/car5-big.jpg"data-lightbox="mygallery"><img src="img/car5-big.jpg" style="width:100%"></a>
+					  </div>
+
+					  <div class="mySlides">
+					    <div class="numbertext">6 / 6</div>
+					      <a href="img/car6-big.jpg"data-lightbox="mygallery"><img src="img/car6-big.jpg" style="width:100%"></a>
+					  </div>
+
+					  <!-- Next and previous buttons -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					  <!-- Image text -->
+					  <!-- <div class="caption-container">
+					    <p id="caption"></p>
+					  </div> -->
+
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="row">
+						<div class="mingallerycar">
+							<!-- Thumbnail images -->
+						    <div class="column">
+						      <img class="demo cursor" src="img/car1-small.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+						    </div>
+						    <div class="column"> 
+						      <img class="demo cursor" src="img/car2-small.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+						    </div>
+						    <div class="column">
+						      <img class="demo cursor" src="img/car3-small.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+						    </div>
+						    <div class="column">
+						      <img class="demo cursor" src="img/car4-small.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+						    </div>
+						    <div class="column">
+						      <img class="demo cursor" src="img/car5-small.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+						    </div> 
+						    <div class="column">
+						      <img class="demo cursor" src="img/car6-small.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+						    </div>
+							</div>
+					</div>
+					
+				</div>
+				
+
+			</div>
+			<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div class="rightdiv">
+					<div class="line2"></div>
+					<div class="h3div1">
+						<p class="spectext">SPECIFICATIONS</p>
+					</div>
+					<br><br>
+					<span class="da bv">Make:</span>
+					
+					<span style="color: #777;">AUDI</span>
+					<br>
+					<span class="da bv">MODEL:</span>
+					
+					<span style="color: #777;">Class C</span>
+					<br>
+					<span class="da bv">MADE YEAR:</span>
+					
+					<span style="color: #777;">2014</span>
+					<br>
+					<span class="da bv">MILEAGE:</span>
+					
+					<span style="color: #777;">104,556</span>
+					<br>
+					<span class="da bv">VIN:</span>
+				
+					<span style="color: #777;">1VXETUROTER</span>
+					<br>
+					<span class="da bv">VERSION:</span>
+
+					<span style="color: #777;">1.6 hdi</span>
+					<br>
+					<span class="da bv">FUEL:</span>
+
+					<span style="color: #777;">Diesel</span>
+					<br>
+					<span class="da bv">ENGINE (CM3):</span>
+
+					<span style="color: #777;">1900</span>
+					<br>
+					<span class="da bv">HORSEPOWER (HP):</span>
+
+					<span style="color: #777;">200</span>
+					<br>
+					<span class="da bv">TRANSMISSION:</span>
+
+					<span style="color: #777;">Manual</span>
+				</div>
+			</div>
+		</div>
+	</div>
+		  
+  <div class="container">
+  	<div class="row">
+  		<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  			<div class="section2">
+  				<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  					<div class="row">
+  						<div class="section2left">
+  							<div class="line3"></div>
+  							<div class="sec2titlediv">
+  								<p class="descrptntitle">VEHICLE DESCRIPTION</p>
+  							</div>
+  							<br><br><br>
+  							<p class="descrptntext">
+  								This 2018 model car is Brilliant Black Crystal Pearlcoat with a Black/Diesel Gray interior. Buy confidence knowing Jeep Dodge Ram Surprise has been exceeding customer expectations for many years and always provide customers with a great value!
+  							</p>
+  							<br>
+  							<p class="descrptntext">
+  								Sit amet consectetura dipisicing elit dui sed eiusmod ciltempor incididunt uet labore uset dolore magna aliqua minim veniam quisnostrud exercitation. Slamco em laborisa aliquip ex ea comdo consequat uis sed auted irure rehenderit voluptate velit esse cillum doloreu fugiat nulla sed pariatura ipsum dolor am consecteu adipis elit sed do eiusmod tempora incididunt. Lorem ipsum dolor sitamet, consectetur adipisicing elit sedo eius tempor incididunt ut labore et dolore magna aliqua.
+  							</p>
+  							<br>
+  							<p class="descrptntext">
+  								Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat aute irure reprehen deritin voluptate velit esse cillum dolore eu fugiat nula pariatur excepteur sint cupidatat no proident sunt in culpa qui officia deserunt mollit anim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+  							</p>
+
+  						</div>
+  					</div>
+  				</div>
+  				<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+  					<div class="row">
+  						<div class="section2rigth">
+  							<div class="line4"></div>
+  							<div class="sec2righttitlediv">
+  								<p class="relatedtitle">RELATED CARS</p>
+  								<br>
+								<div class="rcar1div">
+									<img  style="float: right;" src="img/rcars1.jpg">
+									<div class="rcars1titlediv"><p class="rcars1titletext">
+										Citroen Picasso
+									</p></div>
+									<div class="rcars1textdiv">
+										<p class="rcars1text">
+											This 2018 model car is Brilliant Black Crystal Pearlcoat with a Black/Diesel Gray interior. Buy...
+										</p>
+									</div>
+								</div>
+								<br><br>
+								<div class="rcar1div">
+									<img  style="float: right;" src="img/rcars2.jpg">
+									<div class="rcars1titlediv"><p class="rcars1titletext">
+										Land Rover
+									</p></div>
+									<div class="rcars1textdiv">
+										<p class="rcars1text">
+											This 2018 model car is Brilliant Black Crystal Pearlcoat with a Black/Diesel Gray interior. Buy...
+										</p>
+									</div>
+								</div>
+								<br><br>
+								<div class="rcar1div">
+									<img  style="float: right;" src="img/rcars3.jpg">
+									<div class="rcars1titlediv"><p class="rcars1titletext">
+										Chrysler 		
+									</p></div>
+									<div class="rcars1textdiv">
+										<p class="rcars1text">
+											This 2018 model car is Brilliant Black Crystal Pearlcoat with a Black/Diesel Gray interior. Buy...
+										</p>
+									</div>
+								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+
+  <div class="container">
+  	<div class="row">
+  		<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  			<div class="row">
+  				<div class="section3right">
+  					<div class="line5"></div>
+  					<div class="commenttitlediv">
+  						<p class="commenttitletext">COMMENTS</p>
+  					</div>
+  					<div class="commentdiv1">
+  						<img style="height: 90px;" src="img/team1.png">
+  						<div class="comment1textdiv">
+  							<p class="comment1text">
+  								I watched the pictures of the car and the youtube video.Very economical and nice car.But a little expensive
+  							</p>
+  						</div>
+  						
+  					</div>
+  					<div class="commentdiv2">
+  						<img style="height: 90px;" src="img/team2.png">
+  						<div class="comment1textdiv">
+  							<p class="comment1text">
+  								I am interested in all fiat models.Fiat Bravo is one of them and a very important model.
+  							</p>
+  						</div>
+  					</div>
+  					<div class="commentdiv3">
+  						<img style="height: 90px;" src="img/team3.png">
+  						<div class="comment1textdiv">
+  							<p class="comment1text">
+  								A few of my relatives are also using this car and are very satisfied.I'm thinking of buying this car
+  							</p>
+  						</div>
+  					</div>
+
+  				</div>
+  			</div>
+  		</div>	
+  		<div class="col-xs-12 col-md-4 col-lg-4">
+  			<div class="row">
+  				<div class="section3left">
+  					<iframe width="390" height="325"src="https://www.youtube.com/embed/tIGOQiYPUbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+ 	
+ 	<br><br>
+
+  <div class="container-fluid">
+		<div class="row">
+			<div class="footer">
+				<div class=" col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="row">
+						<div class="sec1infooter">
+							<img style="width: 250px;height: 250px" src="img/Logo.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="row">
+						<div class="sec2infooter">
+							<div class="foottext1div">
+								<h5 class="foottext1">Get started</h5>
+								<p class="foottext2">Home</p>
+								<p class="foottext2">Sign up</p>
+								<p class="foottext2">Downloads</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+					<div class="row">
+						<div class="sec3infooter">
+							<div class="foottext1div">
+								<h5 class="foottext1">About us</h5>
+								<p class="foottext2">Company </p>
+								<p class="foottext2">Information</p>
+								<p class="foottext2">Contact us</p>
+								<p class="foottext2">Reviews</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+					<div class="row">
+						<div class="sec4infooter">
+							<div class="foottext1div">
+								<h5 class="foottext1">Support</h5>
+								<p class="foottext2">FAQ </p>
+								<p class="foottext2">Help desk</p>
+								<p class="foottext2">Forums</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="row">
+						<div class="sec5infooter">
+							<div class="iconfoot1">
+								<i class="fa fa-twitter fa-3x"></i>
+								<i style="margin-left: 15px;" class="fa fa-facebook fa-3x"></i>
+								<i style="margin-left: 15px;" class="fa fa-google-plus fa-3x"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class=" col-xs-12 col-sm-12 col-md-12">
+				<div class="row">
+					<div class="footercop">
+						<p class="footercoptext">© 2018 Copyright Text </p>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
